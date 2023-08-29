@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.2.13/css/dx.light.css"/>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" />
+    <title>test</title>
+  </head>
+
+  <body class="dx-viewport">
+    <header class="header">
+      <div class="p-3 text-center bg-white border-bottom">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0"
+            >
+            </div>
+            <div class="col-md-4">
+
+            </div>
+            <div
+              class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center"
+            >
+              <div id="noLoginSection">
+                <a href="#">
+                  <button type="button" class="btn btn-primary btn-floating">
+                    <i class="fa-solid fa-user"></i>
+                  </button>
+                </a>
+              </div>
+              <div id="loginSection" class="d-flex">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div
+          class="container justify-content-center justify-content-md-between"
+        >
+          <ul class="navbar-nav flex-row">
+            <div class="dx-field-value">
+              <div id="dropdown-groups"></div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section-index container">
+      <div id="tabpanel-container" class="tab-panel-container h-100"></div>
+    </section>
+    <script type="text/html" id="tabs-content">
+      <div class="tabs-content-wrapper container">
+        <div
+          id="video-container-<%= id %>"
+          class="video-container row gx-4"
+        ></div>
+      </div>
+    </script>
+
+    <script type="text/html" id="video-content">
+      <div id="video-col-<%= videoId %>" class="video-col col-md-6 col-lg-3">
+        <div class="video-iframe-wrapper">
+          <iframe
+            loading="lazy"
+            src="https://www.youtube-nocookie.com/embed/<%= videoId %>"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-judul">
+          <h3 class="judul"><%= judul %></h3>
+          <p class="info">
+            <span><i class="far fa-user-circle"></i><%= userCreated %> /</span>
+            <span><i class="fas fa-folder"></i><%= groupInfo %> /</span>
+            <span><i class="far fa-clock"></i><%= dateCreated %></span>
+          </p>
+        </div>
+
+        <div
+          id="video-buttons"
+          class="video-buttons d-flex flex-column flex-sm-row justify-content-between"
+        >
+          <div id="btn-update-<%= linkId %>" class="btn-update"></div>
+          <div id="btn-delete-<%= linkId %>" class="btn-delete"></div>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.2.13/js/dx.all.js"></script>
+
+    <script src="index.js" type="module"></script>
+    <script src="script/videoGroupInfoService.js" type="module"></script>
+    <script src="script/videoLinkServices.js" type="module"></script>
+  </body>
+</html>

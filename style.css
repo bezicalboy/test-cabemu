@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0C4n.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjr0C4n.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1y4n.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-stretch: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1y4n.ttf) format('truetype');
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-roboto);
+  }
+  body {
+    font-family: "Open Sans", sans-serif !important;
+  }
+  .btn-grups-social-media a {
+    font-size: 16px;
+    margin-left: 14px;
+  }
+  .section-index {
+    margin-top: 30px;
+    margin-bottom: 4rem;
+  }
+  .tab-panel-container .dx-tabs .dx-item .dx-tab-text {
+    color: #1c1c1c;
+    font-weight: 500;
+  }
+  .tabs-content-wrapper {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .video-col {
+    margin-bottom: 50px;
+  }
+  .video-judul {
+    margin-top: 20px;
+  }
+  .judul {
+    font-weight: 500 !important;
+    font-family: "Open Sans", sans-serif;
+    color: #1c1c1c;
+    margin: 0;
+    font-size: 20px !important;
+  }
+  .info {
+    font-size: 14px !important;
+    color: #6a6a6a;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  .info span {
+    margin-right: 8px;
+  }
+  .info span i {
+    margin-right: 5px;
+  }
+  .video-iframe-wrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  .video-iframe-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 2px 2px;
+  }
+  .video-buttons {
+    margin-top: 15px;
+  }
+  @media (max-width: 390.98px) {
+    .container {
+      max-width: 370px;
+    }
+  }
+  @media (max-width: 575.98px) {
+    .tabs-content-wrapper {
+      padding-top: 30px;
+      padding-bottom: 0px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .judul {
+      font-weight: 500 !important;
+      font-family: "Open Sans", sans-serif;
+      color: #1c1c1c;
+      margin: 0;
+      font-size: 20px !important;
+    }
+    .info {
+      font-size: 14px !important;
+      color: #6a6a6a;
+      font-weight: 500;
+      margin-top: 15px;
+      margin-bottom: 0;
+      font-family: "Open Sans", sans-serif;
+    }
+    .info span {
+      margin-right: 8px;
+    }
+    .info span i {
+      margin-right: 5px;
+    }
+    .video-buttons {
+      margin-top: 25px;
+    }
+    .btn-update {
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width: 767px) {
+    .video-iframe-wrapper {
+      width: 100%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1500px;
+    }
+  }
